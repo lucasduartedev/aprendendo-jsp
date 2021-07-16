@@ -12,6 +12,8 @@
 		<h1>Curso de JSP</h1>
 	</header>
 	
+	<%-- Comentário simples --%>
+	
 	<%= "<h3>Saída de testo qualquer! </h3>"%>
 	
 	<%	for(int i = 0; i < 5; i++) {
