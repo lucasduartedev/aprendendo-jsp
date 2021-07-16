@@ -12,7 +12,7 @@
 		<h1>Curso de JSP</h1>
 	</header>
 	
-	<% out.print("<h3>Saída de testo qualquer! </h3>"); %>
+	<%= "<h3>Saída de testo qualquer! </h3>"%>
 	
 	<%	for(int i = 0; i < 5; i++) {
 			out.print("Linha: " + i + "<br/>");
@@ -20,6 +20,16 @@
 	%>
 
 	<a href="./form.jsp">Formulário</a>
+	
+	<%! int n1 = 5;
+		public int retorna(int n) {
+			return n * 5;
+		}
+	%>
+	
+	<%= "<br/>" + retorna(n1) %>
+	
+	<%= application.getInitParameter("parametro") %>
 	
 </body>
 </html>

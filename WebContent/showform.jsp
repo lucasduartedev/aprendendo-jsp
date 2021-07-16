@@ -13,15 +13,10 @@
 	</header>
 
     <div>
-    	
-    	<%
-    		String nome = request.getParameter("nome");
-    		String idade = request.getParameter("idade");
-    	%>
     
-        <% out.print(nome + "<br/>"); %>
+        <%= request.getParameter("nome") + "<br/>" %>
         
-        <% out.print(idade); %>
+        <%= request.getParameter("idade") + "<br/>" %>
         
         <a href="../curso-jsp/form.jsp">Formulário</a>
         <br/>
